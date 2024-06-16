@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    }
+
+    header{
+        display: grid;
+        justify-content: center;
+        padding: 5px;
+
+    }
+
+    .flash_alerta{
+        text-align: center;
+        background-color: rgba(255, 0, 0, 0.514);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 12px;
+        width: 400px;
+        font-size: 14px;
+        font-weight: bolder;
+        color: rgb(242, 250, 171);
+    }
+
+    body{
+        background-image: url(../imagens/fundo\ .png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: "Sedan", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    #titulo{
+        color: azure;
+        text-shadow:1px 1px 2px black;
+        font-size: 20px;
+    }
+
+    .caixa-maior{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 30px;
+    }
+
+    #user{
+        margin-left: 11px;
+    }
+
+    #enttt{
+      text-align: center;
+      font-size: 36px;  
+    }
+
+    .caixa-menor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    background-image:linear-gradient(-45deg, rgba(64, 225, 231, 0.781),rgba(255, 255, 255, 0.521));
+    backdrop-filter: blur(10px);
+    width: 375px;
+    height: auto;
+    border-radius: 20px;
+    padding: 30px;
+    color: rgb(207, 255, 203);
+    text-shadow:1px 1px 3px rgb(0, 0, 0);
+    box-shadow: 5px 6px 8px 0px rgba(0, 217, 255, 0.527);
+    }
+
+    .label-float{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    button{
+        background-color: #5E8C61;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .botao{
+        color: black;
+        font-family: "Sedan", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    button:hover{
+        background-color: #07393C;
+        color: azure;
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+        text-shadow:2px 1px 3px black;
+        font-size: 20px;
+    }
+
+    #downloads{
+        margin: 20px;
+    }
+
+    #arquivosParaDownload{
+        background-color: rgba(0, 217, 255, 0.527);
+        border-radius: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px;
+    }
+
+    #download_menor{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cad{
+        background-color: transparent;
+        padding: 5px;
+    }

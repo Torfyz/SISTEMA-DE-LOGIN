@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="chess-knight-alt.png" type="image/x-icon">-->
+
+    <title>CEO JORGE</title>
+    <link rel="stylesheet" href="../static/css/adm.css">
+</head>
+
+<body>
+
+    <div class="caixa-maior">
+        <div id="adm">
+            <h1 id="ADM">CADASTRO</h1>
+        </div>
+        <div id="adm-caixamenor" class="caixa-menor">
+            <h2 id="enttt">CADASTRO DE USUÁRIOS</h2>
+            <form id="user" action="/cadastro-1" method="post" class="label-float">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="nome" id="usuario" required placeholder="Informe nome">
+                <br>
+                <label for="text">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Informe email">
+                <br>
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="senha" required placeholder="Informe senha">
+                <br>
+                <button id="button" class="botao" type="submit" href="">CADASTRAR</button>
+            </form>
+            <form action="/">
+                <button class="butao" type="submit">ÁREA LOGIN</button>
+            </form>
+    </div>
+</body>
+
+</html>

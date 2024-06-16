@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="chess-knight-alt.png" type="image/x-icon">-->
+    
+    <title>CEO JORGE</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+<body>
+
+    {% set menssagem = get_flashed_messages() %}
+    {% if menssagem  %}
+        <header>
+            <div class="flash_alerta">
+                {{menssagem[0]}}
+            </div>
+        </header>
+    {% endif %}
+
+    <div class="caixa-maior">
+        <h1 id="titulo">desv.jorge</h1> 
+        <div class="caixa-menor" >
+            <h2 id="enttt">LOGIN</h2>
+            <form id="user" action="/logado" method="post" class="label-float">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="nome" id="usuario" required placeholder="Informe nome">
+                <br>
+                <label for="text">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Informe email">
+                <br>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required placeholder="Informe senha">
+                <br>
+                <button id="button" class="botao" type="submit" href="" >ENTRAR</button>
+            </form>
+            <div>
+            </div>
+                    <form action="/signup" method="post">
+                        <strong>Não tem conta?</strong>
+                        <button id="button" class="cad botao" type="submit">FAÇA SEU CADASTRO</button>
+                    </form>
+        </div>
+    </div>
+</body>
+</html>

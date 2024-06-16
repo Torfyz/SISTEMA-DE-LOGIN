@@ -1,0 +1,22 @@
+Olá, sou um entusiasta de programação em busca constante de aprendizado e crescimento. Atualmente, estou trabalhando em um projeto pessoal que visa implementar tecnologias relevantes para o desenvolvimento web. Meu objetivo com esse projeto é não apenas aprimorar minhas habilidades, mas também preparar o caminho para a aplicação prática em projetos reais no futuro.
+
+Principais Características:
+
+Paixão pela Programação:
+
+Sou apaixonado por programação e estou sempre em busca de novos desafios e oportunidades de aprendizado.
+Aprendizado Contínuo:
+
+Como estudante de programação, estou constantemente explorando novas tecnologias e conceitos para expandir meu conhecimento e habilidades.
+Foco em Tecnologias Atuais:
+
+No meu projeto pessoal, estou utilizando tecnologias modernas, como o framework Flask e o banco de dados SQLite3, para desenvolver soluções web eficientes e escaláveis.
+Visão Prática:
+
+Reconheço a importância de aplicar meus conhecimentos em projetos práticos e estou construindo meu projeto pessoal com o objetivo de preparar o terreno para futuras implementações em projetos reais.
+Agradecimento pela Assistência:
+
+Agradeço profundamente por toda assistência e suporte que recebo ao longo do meu percurso de aprendizado. Cada contribuição é valiosa e me ajuda a me tornar um desenvolvedor melhor a cada dia.
+Conclusão:
+
+Em resumo, estou comprometido em me tornar um desenvolvedor habilidoso e experiente, e meu projeto pessoal é uma parte fundamental desse processo. Estou ansioso para aplicar o que aprendi e continuar crescendo como desenvolvedor, sempre buscando novos desafios e oportunidades de aprendizado.

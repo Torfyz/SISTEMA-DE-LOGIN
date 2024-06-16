@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="chess-knight-alt.png" type="image/x-icon">-->
+
+    <title>user</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <h1 id="titulo">desv.jorge</h1>
+        <div class="caixa-menor">
+            <h1>USUÁRIO LOGADO COM SUCESSO</h1>
+            <form action="/">
+                <button id="butao" type="submit">ÁREA LOGIN</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="caixa-maior" id="downloads">
+        <div class="caixa-menor">
+            <h1>DOWNLOADS</h1>
+            <div id="download_menor">
+                {% if arquivos %}
+                    <form action="/download" method="post">
+                        <select name="arquivosParaDownload" id="arquivosParaDownload">
+                            {% for documento in arquivos %}
+                                <option value="{{documento}}">{{documento}}</option>
+                            {% endfor %}
+                        </select>
+                        <button id="butao" type="submit">BAIXAR</button>
+                    </form>
+                {% else %}
+                    <h1>SEM ARQUIVOS NO BANCO DE DADOS</h1>
+                {% endif %}
+            </div>                       
+        </div>
+    </div>
+</body>
+
+</html>

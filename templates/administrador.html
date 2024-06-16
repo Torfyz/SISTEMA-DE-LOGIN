@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="shortcut icon" href="chess-knight-alt.png" type="image/x-icon">-->
+
+    <title>CEO JORGE</title>
+    <link rel="stylesheet" href="../static/css/adm.css">
+</head>
+
+<body>
+    <div class="caixa-maior">
+        <header id="cabecalho">
+            {% set menssagem = get_flashed_messages() %}
+            {% if menssagem %}
+            <div class="flash_alerta">
+                {{menssagem[0]}}
+            </div>
+            {% endif %}
+            <div id="adm">
+                <h1 id="ADM">ADMINISTRADOR</h1>
+            </div>
+        </header>
+        <div id="adm-caixamenor" class="caixa-menor">
+            <h2 id="enttt">CADASTRO DE USUÁRIOS</h2>
+            <form id="user" action="/cadastrarUsuario" method="post" class="label-float">
+                <label for="usuario">Usuário</label>
+                <input type="text" name="nome" id="usuario" required placeholder="Informe nome">
+                <br>
+                <label for="text">E-mail</label>
+                <input type="email" name="email" id="email" required placeholder="Informe email">
+                <br>
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="senha" required placeholder="Informe senha">
+                <br>
+                <button id="button" class="botao" type="submit" href="">CADASTRAR</button>
+                <h1 id="titulo">desv.jorge</h1>
+            </form>
+            <form action="/">
+                <button class="butao" type="submit">ÁREA LOGIN</button>
+            </form>
+        </div>
+        <div id="adm-users" class="caixa-menor">
+            <h1>USUÁRIOS CADASTRADOS</h1>
+                {% if usuarios %}
+                {% for usuario in usuarios %}
+                <form action="/excluirUsuario" method="post">
+                    <ul id="lista">
+                        <input type="hidden" name="usuario_id" value="{{ usuario[0] }}">
+                        <li>NOME: {{ usuario[1] }}</li>
+                        <li>SENHA: {{ usuario[2] }}</li>
+                        <li>EMAIL: {{ usuario[3] }}</li>
+                    </ul>
+                    <button type="submit" class="butao">EXCLUIR</button>
+                </form>
+                --------------------------------
+                {% endfor %}
+                {% else %}
+                <h1 id="empty">NÃO HÁ USUÁRIOS CADASTRADOS</h1>
+                {% endif %}
+        </div>
+
+    <div id="upload_maior" class="caixa-menor upload">
+        <h1>ENVIAR ARQUIVOS</h1>
+        <div id="upload_menor" class="upload">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="documento" id="documento"> <br><br><br>
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+Tecnologias Utilizadas:
+Flask: Framework web em Python.
+SQLite3: Banco de dados embutido.
+
+Metodologias:
+MVC (Model-View-Controller)
+
+Descrição:
+Este é um sistema básico de gerenciamento de usuários desenvolvido com Flask, um framework web em Python. 
+Ele permite realizar operações como login, cadastro de usuários, exclusão de usuários, upload e download de arquivos. 
+O banco de dados utilizado é o SQLite3, que armazena informações sobre os usuários, como nome, senha e email.
+
+Funcionalidades:
+
+Login: Os usuários podem fazer login utilizando suas credenciais.
+Cadastro de Usuários: Novos usuários podem se cadastrar no sistema.
+Exclusão de Usuários: Administradores podem excluir usuários do sistema.
+Upload e Download de Arquivos: Os usuários podem fazer upload e download de arquivos.
+
+Rotas:
+/: Formulário de login.
+/adm: Página do administrador, mostrando usuários cadastrados.
+/usuarios: Página de usuários, mostrando arquivos na pasta arquivos/.
+/logado: Autenticação do usuário.
+/cadastrarUsuario: Cadastro de novo usuário.
+/excluirUsuario: Exclusão de usuário.
+/upload: Upload de arquivos.
+/download: Download de arquivos.
+Requisitos:
+
+Arquivo usuarios.db com a estrutura correta.
+Templates HTML no diretório templates/.
+Arquivos estáticos (CSS, JavaScript) no diretório static/.
+Observações:
+
+Este sistema pode ser expandido adicionando mais funcionalidades, como edição de usuários, autenticação com criptografia de senha, entre outros.
+Medidas de segurança, como proteção contra injeção SQL, devem ser implementadas para evitar vulnerabilidades.
+
+para acessar o administrador: 
+nome: adm
+email: adm@gmail.com
+senha: 000

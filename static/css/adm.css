@@ -1,0 +1,95 @@
+@import url(home.css);
+
+#adm-users{
+    display: grid;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+    position: relative;
+    padding: auto;
+}
+
+#listaUsuarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 30px;
+    margin: 0px;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    color: black;
+    text-align: center;
+    border-radius: 0px;
+    text-shadow:1px 1px 3px rgba(255, 255, 255, 0.466);
+    
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    font-size: 24px;
+}
+
+#adm{
+    background-color: rgba(64, 219, 219, 0.377);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 12px;
+    width: 800px;
+}
+
+#ADM{
+    color: rgb(132, 248, 202);
+    text-shadow:1px 1px 2px black;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+#adm-caixamenor{
+    height: auto;
+    width: 500px;
+}
+
+.butao{
+    background-color: #5e8c80;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#butao:hover{
+    background-color: #07393C;
+    color: azure;
+}
+
+#adm-users{
+    padding: 30px;
+    margin: 15px ;
+}
+
+#empty{
+    font-size: 28px;
+    text-shadow:1px 1px 3px rgba(255, 255, 255, 0.466);
+    padding: 10px;
+    color: rgb(77, 76, 76);
+}
+
+#upload_maior{
+    margin-bottom: 15px;
+    width: auto;
+}
+
+#documento{
+    color: black;
+    background-image:linear-gradient(-45deg, rgba(212, 227, 255, 0.781),rgba(255, 255, 255, 0.836));
+    width: auto;
+}
