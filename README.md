@@ -17,7 +17,3 @@ Este projeto desenvolvido em Python utiliza Flask para criar um sistema de geren
 - **Estilos CSS:** Estilização das interfaces para uma experiência mais amigável ao usuário.
 
 Este projeto demonstra a implementação de um sistema web básico utilizando Flask para criar APIs robustas e interações dinâmicas com o usuário através de HTML e CSS.
-
---- 
-
-Essa descrição abrange os principais pontos do seu projeto, destacando suas funcionalidades e tecnologias utilizadas.
